@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Navbar from '../../components/Navbar/Navbar';
 
 const Profile = () => {
     const [user,setuser]=useState([])
@@ -45,6 +46,7 @@ const Profile = () => {
     },[join])
   return (
     <div className='bg-gray-900 text-gray-200 '>
+        <Navbar/>
          <div class="container mx-auto p-6">
         <header class="flex items-center justify-between bg-gray-800 p-6 rounded-lg shadow-md">
             <div class="flex items-center">

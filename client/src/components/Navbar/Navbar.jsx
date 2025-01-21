@@ -17,7 +17,7 @@ const Navbar = () => {
     }
   }
   return (
-    <div className='h-[100vh] w-[100%] bg-center bg-no-repeat bg-cover bg-black op' style={{ backgroundImage: "url('https://images.unsplash.com/photo-1437935690510-49ce2c715aee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbnMlMjBneW18ZW58MHx8MHx8fDA%3D')" }} id='home'>
+    <div className='fixed w-full z-20 bg-gray-800 opacity-90' >
       <nav class="bg-gay-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
@@ -39,7 +39,7 @@ const Navbar = () => {
               </div>
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
-                  <a href="#home" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
+                  <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
                   <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">About</a>
                   <a href="#services" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Services</a>
                   <a href="#plans" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Plans</a>
@@ -94,9 +94,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="data w-2/5 m-5 flex h-full items-center  ">
-        <h1 className='text-white text-6xl italic'>Change the way to approach the goal not the goal</h1>
-      </div>
+    
     </div>
   )
 }

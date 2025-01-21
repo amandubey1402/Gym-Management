@@ -4,6 +4,7 @@ const Navbar = () => {
     const logout=()=>{
         sessionStorage.removeItem("userid")
         sessionStorage.removeItem("role")
+        window.location.reload()
     }
     return (
             <div class="bg-gray-800 min-w-64 min-h-screen text-white">
